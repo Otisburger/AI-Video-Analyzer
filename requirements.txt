@@ -1,0 +1,14 @@
+Flask
+requests
+Flask-Session
+Flask-Cors
+Flask-SQLAlchemy
+python-dotenv
+psycopg2-binary
+bcrypt
+selenium
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-chroma
