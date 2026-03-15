@@ -56,17 +56,13 @@ h2
     text-align: center;
 }
 
-.main
+.main-conversation
 {
-    width: max-content;
     font-family: "Segoe UI", sans-serif;
-    padding: 15px 45px;
-    background:rgb(143, 131, 224);
-    border-radius: 4px;
-    border: 1px solid rgb(133, 143, 204);
+    background:lightblue;
 }
 
-.main h2
+.main-conversation h2
 {
     text-align: center;
     font-size: 28px;
@@ -75,7 +71,7 @@ h2
     color: white;
 }
 
-.main h4
+.main-conversation h4
 {
     text-align: center;
     font-size: 14px;
@@ -84,123 +80,100 @@ h2
     color: white;
 }
 
-.main label 
-{
-    display: block;
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: white;
-}
-
 p {
     color: white;
 }
 
-#button 
+.main-conversation button
 {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     background:darkslateblue;
-    width: 340px;
     color:oldlace;
+    width: 17%;
 }
 
-.main input 
-{
-    padding: 10px 20px;
-    font-size: 15px;
-    background: rgb(197, 190, 241);
-    width: 100%;
-    border: white;
-    border-radius: 4px;
-    color: darkslateblue;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-
-.main select 
-{
-    padding: 10px 20px;
-    font-size: 15px;
-    background: rgb(197, 190, 241);
-    width: 88%;
-    border: white;
-    border-radius: 4px;
-    color: darkslateblue;
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-.main button 
+.main-conversation input 
 {
     padding: 10px 20px;
     font-size: 15px;
     border: white;
     border-radius: 4px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     background:darkslateblue;
-    width: 100%;
     color:oldlace;
+    width: 17%;
 }
 
-.question
-{
-    display: block;
-    margin-bottom: 10px;
-}
-
-.question textarea
+.main-conversation textarea
 {
     padding: 10px 20px;
     font-size: 15px;
-    background: rgb(197, 190, 241);
-    width: 340px;
+    background: white;
+    width: 50%;
     border: white;
     border-radius: 4px;
     color: darkslateblue;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    resize: none;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    resize: none
 }
 
-.question textarea::placeholder
+.main-conversation input,
+.main-conversation button,
+.main-conversation textarea {
+    height: 50px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.main-conversation textarea::placeholder
 {
     color: rgba(72, 61, 139, 0.5);
 }
 
-.userText
+.userText-conversation
 {
     display: block;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-size: 25px;
     border: rgb(255, 221, 120);
     border-radius: 5px;
     margin-bottom: 10px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 5px;
     background:rgb(255, 221, 120);
     width: max-content;
-    height: max-content;
     max-width: 35%;
     color:darkslateblue;
     resize: none;
+    overflow: hidden;
 }
 
-.aiText
+.aiText-conversation
 {
     display: block;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-size: 25px;
     border: rgb(253, 206, 222);
     border-radius: 5px;
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 5px;
     margin-right: auto;
     background:rgb(253, 206, 222);
     width: max-content;
-    height: max-content;
     max-width: 35%;
     color:darkslateblue;
     resize: none;
+    overflow: hidden;
 }
 
 #fill

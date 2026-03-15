@@ -35,9 +35,9 @@ export function Input(){
 	return (
     <div className="App">
 		    <h1>AI Video Analyzer</h1>
-		    	<div className = "main">
+		    	<div className = "main-input">
 			    	<form onSubmit={handleSubmit}>
-				        <div className="transcription">
+				        <div className="transcription-input">
 					        <label htmlFor="username">Video Transcript</label>
 					        <textarea 
                       			type="text"

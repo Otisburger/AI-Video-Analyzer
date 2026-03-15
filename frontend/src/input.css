@@ -55,7 +55,7 @@ h2
     text-align: center;
 }
 
-.main
+.main-input
 {
     width: max-content;
     margin: 25px auto;
@@ -66,7 +66,7 @@ h2
     border: 1px solid rgb(133, 143, 204);
 }
 
-.main h2
+.main-input h2
 {
     text-align: center;
     font-size: 28px;
@@ -75,7 +75,7 @@ h2
     color: white;
 }
 
-.main h4
+.main-input h4
 {
     text-align: center;
     font-size: 14px;
@@ -84,7 +84,7 @@ h2
     color: white;
 }
 
-.main label 
+.main-input label 
 {
     display: block;
     font-size: 16px;
@@ -103,20 +103,19 @@ p {
     color: darkslateblue;
 }
 
-.main input 
+.main-input input 
 {
     padding: 10px 20px;
     font-size: 15px;
-    background: rgb(197, 190, 241);
-    width: 300px;
     border: white;
     border-radius: 4px;
-    color: darkslateblue;
     margin-bottom: 5px;
-    margin-top: 5px;
+    background:darkslateblue;
+    color:oldlace;
+    width: 340px;
 }
 
-.main select 
+.main-input select 
 {
     padding: 10px 20px;
     font-size: 15px;
@@ -129,7 +128,7 @@ p {
     margin-bottom: 0px;
 }
 
-.main button 
+.main-input button 
 {
     padding: 10px 20px;
     font-size: 15px;
@@ -141,13 +140,13 @@ p {
     width: 340px;
 }
 
-.transcription
+.transcription-input
 {
     display: block;
     margin-bottom: 10px;
 }
 
-.transcription textarea
+.transcription-input textarea
 {
     padding: 10px 20px;
     font-size: 15px;
@@ -162,39 +161,9 @@ p {
     resize: none;
 }
 
-.transcription textarea::placeholder
+.transcription-input textarea::placeholder
 {
     color: rgba(72, 61, 139, 0.5);
-}
-
-.userText
-{
-    display: block;
-    padding: 65px 175px;
-    font-size: 25px;
-    border: oldlace;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: 5px;
-    background:oldlace;
-    width: 100%;
-    color:black;
-}
-
-.aiText
-{
-    display: block;
-    padding: 65px 175px;
-    font-size: 25px;
-    border: violet;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: auto;
-    background:violet;
-    width: 100%;
-    color:white;
 }
 
 #fill

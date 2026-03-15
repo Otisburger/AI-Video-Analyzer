@@ -47,27 +47,23 @@ export function Conversation(){
     <div className="App">
 		    <h1>AI Video Analyzer</h1>
 				{history.map((response, index) => (
-					<textarea
-						id={index}
-						type="button"
-						name="text"
-						value={response}
-						className={index % 2 === 0 ? "userText" : "aiText"}
-						readOnly
-					/>
+    				<div
+        				key={index}
+        				id={index}
+        				className={index % 2 === 0 ? "userText-conversation" : "aiText-conversation"}
+    				>
+        			{response}
+    				</div>
 				))}
-		    	<div className = "main">
+		    	<div className = "main-conversation">
 			    	<form onSubmit={handleSubmit}>
-				        <div className="question">
-					        <label htmlFor="username">Your Question</label>
-					        <textarea
-                      			type="text"
-                      			name="username"
-                      			id="username"
-								onChange={handleChange}
-								placeholder="Type your question here."
-                    		/>
-				        </div>
+					    <textarea
+                      		type="text"
+                      		name="question"
+                      		id="question"
+							onChange={handleChange}
+							placeholder="Type your question here."
+                    	/>
 				        <input
 							id = "button"
 							type="submit"
@@ -76,10 +72,10 @@ export function Conversation(){
 							className="submit"
 							disabled={disabled}
 						/>
+						<button type="button" onClick={handleRedirect} className="submit">
+							Back to Home
+						</button>
 			    	</form>
-			    	<button type="button" onClick={handleRedirect} className="submit">
-						Back to Home
-					</button>
 		    	</div>
     </div>
 	);
